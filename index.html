@@ -2,17 +2,395 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>YK Homepage</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="YK유통은 신선하고 품질 좋은 참치를 안정적으로 공급하는 참치 전문 유통기업입니다."
+    >
+
+    <meta
+        name="keywords"
+        content="YK유통, 참치유통, 참치납품, 냉동참치, 참다랑어, 눈다랑어, 황새치"
+    >
+
+    <title>YK유통 | 참치 전문 유통기업</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Hello, YK Homepage</h1>
+    <!-- 헤더 -->
+    <header class="header" id="header">
+
+        <div class="header-inner">
+
+            <a href="#home" class="logo">
+                <span class="logo-main">YK</span>
+                <span class="logo-sub">유통</span>
+            </a>
+
+            <nav class="navigation" id="navigation">
+
+                <a href="#about">회사소개</a>
+                <a href="#products">취급품목</a>
+                <a href="#distribution">유통안내</a>
+                <a href="#contact">납품문의</a>
+
+            </nav>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                type="button"
+                aria-label="메뉴 열기"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- 메인 화면 -->
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-label">
+                    PREMIUM TUNA DISTRIBUTION
+                </p>
+
+                <h1>
+                    바다의 신선함을<br>
+                    그대로 전달합니다
+                </h1>
+
+                <p class="hero-description">
+                    YK유통은 엄선된 참치 제품을<br class="mobile-break">
+                    안전하고 신속하게 공급합니다.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#about" class="button button-white">
+                        회사소개
+                    </a>
+
+                    <a href="#contact" class="button button-outline">
+                        납품문의
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-guide">
+
+                <span class="scroll-line"></span>
+
+                <span>SCROLL</span>
+
+            </a>
+
+        </section>
+
+
+        <!-- 회사소개 -->
+        <section class="section about-section" id="about">
+
+            <div class="section-inner">
+
+                <div class="section-heading">
+
+                    <p class="section-label">ABOUT YK</p>
+
+                    <h2>
+                        신뢰할 수 있는<br>
+                        참치 전문 유통기업
+                    </h2>
+
+                </div>
+
+                <div class="about-content">
+
+                    <p>
+                        YK유통은 참치 전문점, 일식당 및 외식업체에
+                        품질 좋은 참치 제품을 안정적으로 공급하고 있습니다.
+                    </p>
+
+                    <p>
+                        제품의 선별부터 보관, 출고, 배송까지
+                        체계적으로 관리하여 거래처가 안심하고 사용할 수 있는
+                        제품을 제공하는 것을 목표로 합니다.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        YK유통에 문의하기
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 핵심 가치 -->
+        <section class="value-section">
+
+            <div class="value-grid">
+
+                <article class="value-card">
+
+                    <span class="value-number">01</span>
+
+                    <h3>엄선된 품질</h3>
+
+                    <p>
+                        거래처의 용도와 품질 기준에 맞는
+                        참치 제품을 선별하여 공급합니다.
+                    </p>
+
+                </article>
+
+                <article class="value-card">
+
+                    <span class="value-number">02</span>
+
+                    <h3>안정적인 공급</h3>
+
+                    <p>
+                        필요한 제품을 필요한 일정에 맞춰
+                        안정적으로 공급합니다.
+                    </p>
+
+                </article>
+
+                <article class="value-card">
+
+                    <span class="value-number">03</span>
+
+                    <h3>신속한 배송</h3>
+
+                    <p>
+                        제품의 품질이 유지될 수 있도록
+                        신속하고 안전하게 배송합니다.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- 제품 -->
+        <section class="section product-section" id="products">
+
+            <div class="product-header">
+
+                <div>
+
+                    <p class="section-label">OUR PRODUCTS</p>
+
+                    <h2>주요 취급 품목</h2>
+
+                </div>
+
+                <p>
+                    실제 취급 품목에 따라<br>
+                    제품명과 내용을 변경할 수 있습니다.
+                </p>
+
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card product-card-1">
+
+                    <div class="product-overlay"></div>
+
+                    <div class="product-content">
+
+                        <span>TUNA 01</span>
+
+                        <h3>참다랑어</h3>
+
+                        <p>고급 사시미 및 참치 전문점용</p>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card product-card-2">
+
+                    <div class="product-overlay"></div>
+
+                    <div class="product-content">
+
+                        <span>TUNA 02</span>
+
+                        <h3>눈다랑어</h3>
+
+                        <p>다양한 외식업체에서 활용 가능한 제품</p>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card product-card-3">
+
+                    <div class="product-overlay"></div>
+
+                    <div class="product-content">
+
+                        <span>TUNA 03</span>
+
+                        <h3>황새치</h3>
+
+                        <p>부드러운 식감과 담백한 맛</p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- 유통 안내 -->
+        <section class="section distribution-section" id="distribution">
+
+            <div class="distribution-title">
+
+                <p class="section-label">DISTRIBUTION</p>
+
+                <h2>
+                    상담부터 배송까지<br>
+                    신속하게 진행합니다
+                </h2>
+
+            </div>
+
+            <div class="distribution-process">
+
+                <div class="process-item">
+
+                    <span>01</span>
+
+                    <h3>납품 상담</h3>
+
+                    <p>필요한 품목과 수량을 상담합니다.</p>
+
+                </div>
+
+                <div class="process-item">
+
+                    <span>02</span>
+
+                    <h3>제품 확인</h3>
+
+                    <p>품목, 규격과 납품 일정을 확인합니다.</p>
+
+                </div>
+
+                <div class="process-item">
+
+                    <span>03</span>
+
+                    <h3>제품 출고</h3>
+
+                    <p>제품의 품질을 확인한 후 출고합니다.</p>
+
+                </div>
+
+                <div class="process-item">
+
+                    <span>04</span>
+
+                    <h3>안전 배송</h3>
+
+                    <p>거래처까지 신속하고 안전하게 배송합니다.</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 문의 -->
+        <section class="contact-section" id="contact">
+
+            <div class="contact-content">
+
+                <p class="section-label white-label">
+                    CONTACT
+                </p>
+
+                <h2>
+                    YK유통과 함께할<br>
+                    거래처를 기다립니다
+                </h2>
+
+                <p>
+                    제품, 가격 및 납품 일정은 전화로 문의해 주세요.
+                </p>
+
+                <a href="tel:010-0000-0000" class="contact-button">
+                    전화 문의하기
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div>
+
+                <strong>YK유통</strong>
+
+                <p>
+                    대표자: 홍길동 | 사업자등록번호: 000-00-00000
+                </p>
+
+                <p>
+                    경기도 시흥시 | 대표전화: 010-0000-0000
+                </p>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 YK DISTRIBUTION. ALL RIGHTS RESERVED.
+            </p>
+
+        </div>
+
+    </footer>
+
 
     <script src="script.js"></script>
+
 </body>
 </html>
