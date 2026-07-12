@@ -466,8 +466,7 @@ button {
     position: relative;
     height: 580px;
     overflow: hidden;
-    background-position: center;
-    background-size: cover;
+    background-color: #061523;
     transition:
         transform 0.4s ease,
         box-shadow 0.4s ease;
@@ -479,40 +478,29 @@ button {
 }
 
 .product-card-1 {
-    background:
-        linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.68),
-            rgba(0, 0, 0, 0.08)
-        ),
-        url("images/참다랑어사진.jpg") center / cover no-repeat;
+    --product-image: url("images/참다랑어사진.jpg");
+    --product-size: auto 82%;
+    --product-position: 46% 32%;
 }
 
 .product-card-2 {
-    background:
-        linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.68),
-            rgba(0, 0, 0, 0.08)
-        ),
-        url("images/눈다랑어사진.jpg") center / cover no-repeat;
+    --product-image: url("images/눈다랑어사진.jpg");
+    --product-size: 132% auto;
+    --product-position: 48% 28%;
+    background-color: #1f4db5;
 }
 
 .product-card-3 {
-    background:
-        linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.68),
-            rgba(0, 0, 0, 0.08)
-        ),
-        url("images/황새치.png") center / cover no-repeat;
+    --product-image: url("images/황새치.png");
+    --product-size: cover;
+    --product-position: center;
 }
 
 .product-card::before {
     position: absolute;
     content: "";
     inset: 0;
-    background: rgba(255, 255, 255, 0.02);
+    background: var(--product-image) var(--product-position) / var(--product-size) no-repeat;
     transition: transform 0.65s ease;
 }
 
@@ -836,6 +824,21 @@ button {
         height: 450px;
     }
 
+    .product-card-1 {
+        --product-size: auto 78%;
+        --product-position: 46% 26%;
+    }
+
+    .product-card-2 {
+        --product-size: 112% auto;
+        --product-position: 50% 24%;
+    }
+
+    .product-card-3 {
+        --product-size: cover;
+        --product-position: center;
+    }
+
     .distribution-section {
         padding: 100px 20px;
         grid-template-columns: 1fr;
@@ -892,5 +895,15 @@ button {
         left: 28px;
         right: 28px;
         bottom: 30px;
+    }
+
+    .product-card-1 {
+        --product-size: auto 72%;
+        --product-position: 46% 22%;
+    }
+
+    .product-card-2 {
+        --product-size: 105% auto;
+        --product-position: 50% 22%;
     }
 }
