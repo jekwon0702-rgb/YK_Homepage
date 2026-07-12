@@ -154,7 +154,7 @@ button {
             rgba(0, 24, 45, 0.66),
             rgba(0, 62, 103, 0.3)
         ),
-        url("images/hero.jpg") center center / cover no-repeat;
+        url("images/참치사진1.jpg") center center / cover no-repeat;
 }
 
 .hero::before {
@@ -559,34 +559,56 @@ button {
 }
 
 .product-card-1 {
-    --product-image: url("images/참다랑어사진.jpg");
-    --product-size: auto 82%;
-    --product-position: 46% 32%;
+    background-color: #061523;
 }
 
 .product-card-2 {
-    --product-image: url("images/눈다랑어사진.jpg");
-    --product-size: 132% auto;
-    --product-position: 48% 28%;
     background-color: #1f4db5;
 }
 
 .product-card-3 {
-    --product-image: url("images/황새치.png");
-    --product-size: cover;
-    --product-position: center;
+    background-color: #061523;
 }
 
-.product-card::before {
+.product-image {
     position: absolute;
-    content: "";
     inset: 0;
-    background: var(--product-image) var(--product-position) / var(--product-size) no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
     transition: transform 0.65s ease;
 }
 
-.product-card:hover::before {
+.product-card-1 .product-image {
+    object-fit: contain;
+    object-position: 46% 32%;
+    transform: scale(0.82);
+}
+
+.product-card-2 .product-image {
+    inset: auto;
+    left: 48%;
+    top: 28%;
+    width: 132%;
+    height: auto;
+    transform: translate(-48%, -28%);
+}
+
+.product-card-3 .product-image {
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-card:hover .product-image {
     transform: scale(1.08);
+}
+
+.product-card-1:hover .product-image {
+    transform: scale(0.88);
+}
+
+.product-card-2:hover .product-image {
+    transform: translate(-48%, -28%) scale(1.08);
 }
 
 .product-overlay {
@@ -966,19 +988,24 @@ button {
         height: 450px;
     }
 
-    .product-card-1 {
-        --product-size: auto 78%;
-        --product-position: 46% 26%;
+    .product-card-1 .product-image {
+        object-position: 46% 26%;
+        transform: scale(0.78);
     }
 
-    .product-card-2 {
-        --product-size: 112% auto;
-        --product-position: 50% 24%;
+    .product-card-1:hover .product-image {
+        transform: scale(0.84);
     }
 
-    .product-card-3 {
-        --product-size: cover;
-        --product-position: center;
+    .product-card-2 .product-image {
+        left: 50%;
+        top: 24%;
+        width: 112%;
+        transform: translate(-50%, -24%);
+    }
+
+    .product-card-2:hover .product-image {
+        transform: translate(-50%, -24%) scale(1.08);
     }
 
     .distribution-section {
@@ -1056,13 +1083,23 @@ button {
         padding: 28px 22px 26px;
     }
 
-    .product-card-1 {
-        --product-size: auto 72%;
-        --product-position: 46% 22%;
+    .product-card-1 .product-image {
+        object-position: 46% 22%;
+        transform: scale(0.72);
     }
 
-    .product-card-2 {
-        --product-size: 105% auto;
-        --product-position: 50% 22%;
+    .product-card-1:hover .product-image {
+        transform: scale(0.78);
+    }
+
+    .product-card-2 .product-image {
+        left: 50%;
+        top: 22%;
+        width: 105%;
+        transform: translate(-50%, -22%);
+    }
+
+    .product-card-2:hover .product-image {
+        transform: translate(-50%, -22%) scale(1.08);
     }
 }
